@@ -39,14 +39,14 @@
 
     <!--banner section-->
     <section class="max-w-7xl mx-auto px-5 my-12">
-        <div class="py-10 text-white">
+        <div class="py-10 text-white flex flex-col md:flex-row justify-between items-end gap-4">
             <!--left side-->
-            <div>
-                <p>Hello, <span>I'm</span></p>
-                <h1>John Dove</h1>
-                <p>Fullstack Developer</p>
-                <p>I am committed to finding innovative solutions and continuously experimenting to help my clients achieve their goals.</p>
-                <button>Let's talk</button>
+            <div class="md:w-1/2">
+                <p class="text-xl font-inter font-medium mb-4" >Hello, <span class="text-primary">I'm</span></p>
+                <h1 class="text-4xl font-bold tracking-[3.22px] mb-5 text-primary font-inter">John Dove</h1>
+                <p class="text-2xl font-montserrat mb-5">Fullstack Developer</p>
+                <p class="text-xl mb-12 md:w-3/4">I am committed to finding innovative solutions and continuously experimenting to help my clients achieve their goals.</p>
+                <button class="py-4 px-10 rounded-md bg-primary text-white font-bold hover:bg-indigo-600">Let's talk</button>
 
                 <!--social button-->
                 <div class="mt-12 mb-8 flex gap-4 items-center">
@@ -58,6 +58,11 @@
                         <a href="#"><img src="src/icons/twitter.svg" class="w-8 h-8"></a>
                     </div>
                 </div>
+            </div>
+
+            <!--right side-->
+            <div class="md:w-1/2 order-first md:order-none">
+                <img src="src/images/hero.svg" alt="" class="w-full md:ml-20">
             </div>
         </div>
     </section>
