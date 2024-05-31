@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website using Tailwind CSS</title>
+  <link href="./dist/output.css" rel="stylesheet">
+
+  <!--Boxicon-->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body class="bg-background">
+    <!--Header-->
+    <header class="text-white">
+        <nav class="max-w-7xl mx-auto bg-gray-800 md:bg-transparent p-5">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-white font-bold text-lg flex items-center gap-3"><img src="./src/images/Logo.svg" alt="Logo">Portfolio</a>
+                <!--nav only for large device-->
+                <div class="hidden md:flex space-x-10">
+                    <a href="#home" class="text-primary hover:text-gray-300">Home</a>
+                    <a href="#projects" class="text-white hover:text-gray-300">Projects</a>
+                    <a href="#resume" class="text-white hover:text-gray-300">Resume</a>
+                </div>
+
+                <!--menu btn, only display on mobile-->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white text-2xl">
+                        <i class='bx bx-menu'></i>
+                    </button>
+                </div>
+            </div>
+            <!--mobile menu-->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <a href="#home" class="text-primary hover:text-gray-300 block py-2 px-1  hover:bg-gray-700">Home</a>
+                <a href="#projects" class="text-white hover:text-gray-300  block py-2 px-1  hover:bg-gray-700">Projects</a>
+                <a href="#resume" class="text-white hover:text-gray-300  block py-2 px-1  hover:bg-gray-700">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--banner section-->
+    <section class="max-w-7xl mx-auto px-5 my-12">
+        <div class="py-10 text-white">
+            <!--left side-->
+            <div>
+                <p>Hello, <span>I'm</span></p>
+                <h1>John Dove</h1>
+                <p>Fullstack Developer</p>
+                <p>I am committed to finding innovative solutions and continuously experimenting to help my clients achieve their goals.</p>
+                <button>Let's talk</button>
+
+                <!--social button-->
+                <div class="mt-12 mb-8 flex gap-4 items-center">
+                    <p>Check out My:</p>
+                    <div class="flex space-x-3">
+                        <a href="#"><img src="src/icons/instagram.svg" class="w-8 h-8"></a>
+                        <a href="#"><img src="src/icons/behance.svg" class="w-8 h-8"></a>
+                        <a href="#"><img src="src/icons/linkedIn.svg" class="w-8 h-8"></a>
+                        <a href="#"><img src="src/icons/twitter.svg" class="w-8 h-8"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Script-->
+    <script src="src/app.js">
+
+    </script>
+  
+</body>
+</html>
