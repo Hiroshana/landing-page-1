@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+header{
+    z-index: 10001 !important;
+}
+
 /* swiper slider */
 .swiper.mySwiper .swiper-wrapper{
     position: relative;
